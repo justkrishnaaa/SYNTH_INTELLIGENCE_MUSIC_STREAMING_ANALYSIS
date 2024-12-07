@@ -77,7 +77,7 @@ top_artists = music_data.groupby('Artist_Name')['Total_Streams'].sum().sort_valu
 
 plt.figure(figsize=(12, 8))
 sns.barplot(x=top_artists.values, y=top_artists.index, palette='magma')
-plt.title("Top 10 Artists by Total Streams", fontsize=16, weight='bold')
+plt.title("Top  Artists by Total Streams", fontsize=16, weight='bold')
 plt.xlabel("Total Streams", fontsize=12)
 plt.ylabel("Artist Name", fontsize=12)
 plt.tight_layout()
